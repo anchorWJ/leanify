@@ -20,9 +20,33 @@ header h1 {
     font-size: 2em;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 5px;
+/* ナビゲーションメニュー */
+nav {
+    background-color: #005bb5;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* メインコンテンツ */
@@ -64,6 +88,23 @@ ul li strong {
     color: #0073e6;
 }
 
+/* ボタンスタイル */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #0073e6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
 /* フッター */
 footer {
     text-align: center;
@@ -71,4 +112,21 @@ footer {
     background-color: #0073e6;
     color: #fff;
     margin-top: 20px;
+}
+
+/* サポートページ専用スタイル */
+#support {
+    text-align: center;
+    padding: 20px;
+    background-color: #eef4ff;
+    border-radius: 8px;
+}
+
+#support p {
+    font-size: 1.2em;
+}
+
+#support ul {
+    text-align: left;
+    display: inline-block;
 }
