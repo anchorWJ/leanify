@@ -1,4 +1,4 @@
-/* 全体のフォントとレイアウト設定 */
+/* === 全体のフォントとレイアウト設定 === */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     text-align: center; /* 全体の中央寄せ */
 }
 
-/* ヘッダー */
+/* === ヘッダー === */
 header {
     background-color: #9489f5;
     color: #fff;
@@ -21,7 +21,7 @@ header h1 {
     font-size: 2em;
 }
 
-/* ナビゲーションメニュー */
+/* === ナビゲーションメニュー === */
 nav {
     text-align: center;
     padding: 10px 0;
@@ -44,7 +44,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.1em;
     padding: 10px 15px;
-    border-radius: 20px; /* 丸みを追加 */
+    border-radius: 20px;
     background-color: rgba(148, 137, 245, 0.2);
     transition: background-color 0.3s;
 }
@@ -53,18 +53,18 @@ nav ul li a:hover {
     background-color: rgba(148, 137, 245, 0.5);
 }
 
-/* メインコンテンツ */
-main {
+/* === メインコンテンツ（index, privacy 共通） === */
+main, .privacy-container {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: left; /* 本文は左寄せ */
+    text-align: left;
 }
 
-/* 各セクションのスタイル */
+/* === 各セクションのスタイル === */
 section {
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -78,11 +78,11 @@ h2 {
     padding-left: 10px;
 }
 
-/* リストスタイル */
+/* === リストスタイル === */
 ul {
     list-style: none;
     padding: 0;
-    text-align: left; /* リストも左寄せ */
+    text-align: left;
 }
 
 ul li {
@@ -94,7 +94,7 @@ ul li strong {
     color: #9489f5;
 }
 
-/* ボタン（共通） */
+/* === ボタン（共通） === */
 .button, .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -111,7 +111,7 @@ ul li strong {
     background-color: #7b6ce5;
 }
 
-/* フッター */
+/* === フッター === */
 footer {
     text-align: center;
     padding: 15px;
@@ -120,7 +120,7 @@ footer {
     margin-top: 20px;
 }
 
-/* サポートページ専用スタイル */
+/* === サポートページ専用スタイル === */
 #support {
     text-align: center;
     padding: 20px;
@@ -137,13 +137,20 @@ footer {
     display: inline-block;
 }
 
-/* プライバシーポリシーのボックスを中央寄せ */
+/* === プライバシーポリシー専用（privacy.html） === */
 .privacy-container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: left;
+    padding: 30px;
+}
+
+.privacy-container h2 {
+    text-align: center;
+}
+
+.privacy-container ul {
+    padding-left: 20px;
+}
+
+.privacy-container ul li {
+    list-style: disc;
+    margin-left: 20px;
 }
