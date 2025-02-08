@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f8f9fa;
     color: #333;
+    text-align: center; /* 全体の中央寄せ */
 }
 
 /* ヘッダー */
@@ -36,20 +37,20 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
-    display: inline;
 }
-
-
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
-    padding: 10px;
+    padding: 10px 15px;
+    border-radius: 20px; /* 丸みを追加 */
+    background-color: rgba(148, 137, 245, 0.2);
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: rgba(148, 137, 245, 0.5);
 }
 
 /* メインコンテンツ */
@@ -60,6 +61,7 @@ main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    text-align: left; /* 本文は左寄せ */
 }
 
 /* 各セクションのスタイル */
@@ -80,6 +82,7 @@ h2 {
 ul {
     list-style: none;
     padding: 0;
+    text-align: left; /* リストも左寄せ */
 }
 
 ul li {
@@ -91,21 +94,21 @@ ul li strong {
     color: #9489f5;
 }
 
-/* ボタンスタイル */
-.button {
+/* ボタン（共通） */
+.button, .btn {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 10px;
-    font-size: 1.1em;
-    color: #fff;
     background-color: #9489f5;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
-.button:hover {
-    background-color: #333;
+.button:hover, .btn:hover {
+    background-color: #7b6ce5;
 }
 
 /* フッター */
@@ -134,29 +137,13 @@ footer {
     display: inline-block;
 }
 
-
-/* メインコンテンツデザイン */
-main {
+/* プライバシーポリシーのボックスを中央寄せ */
+.privacy-container {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-/* ボタン（トップページに戻るリンク） */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #9489f5;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #9489f5;
+    text-align: left;
 }
